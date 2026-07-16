@@ -8,17 +8,15 @@ cask "promptu" do
   homepage "https://github.com/mrcnski/promptu-app"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Promptu.app"
 
+  zap trash: "~/Library/Preferences/ski.mrcn.promptu-app.plist"
+
   caveats <<~EOS
-    Promptu is ad-hoc signed, not notarized. Install with
-    --no-quarantine, or clear the flag after installing:
+    Promptu is ad-hoc signed, not notarized. After installing, clear
+    the quarantine flag once:
       xattr -d com.apple.quarantine /Applications/Promptu.app
   EOS
-
-  zap trash: [
-    "~/Library/Preferences/ski.mrcn.promptu-app.plist",
-  ]
 end
