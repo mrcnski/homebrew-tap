@@ -1,6 +1,6 @@
 cask "promptu" do
-  version "0.1.0"
-  sha256 "50e9b3c255eff55c6454f5aadb24c5e5e32b353533be0364bd0d8a0b4d3a4e1a"
+  version "0.2.0"
+  sha256 "647c7a0fdf25c70eade667882fe30fa3c120e5be6bcbe03a731ad98bd70f612c"
 
   url "https://github.com/mrcnski/promptu-app/releases/download/v#{version}/Promptu-#{version}.zip"
   name "Promptu"
