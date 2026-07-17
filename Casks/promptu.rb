@@ -2,10 +2,10 @@ cask "promptu" do
   version "0.2.0"
   sha256 "647c7a0fdf25c70eade667882fe30fa3c120e5be6bcbe03a731ad98bd70f612c"
 
-  url "https://github.com/mrcnski/promptu-app/releases/download/v#{version}/Promptu-#{version}.zip"
+  url "https://github.com/mrcnski/promptu/releases/download/v#{version}/Promptu-#{version}.zip"
   name "Promptu"
   desc "Menubar companion to Emacs promptu: compose LLM prompts from blocks"
-  homepage "https://github.com/mrcnski/promptu-app"
+  homepage "https://github.com/mrcnski/promptu"
 
   depends_on arch: :arm64
   depends_on macos: :sonoma
